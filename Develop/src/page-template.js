@@ -70,7 +70,7 @@ const generateTeam = (team) => {
   // Adds enginner to array
   html.push(
     team
-      .filter((employees) => employee.getRole() === "Engineer")
+      .filter((employee) => employee.getRole() === "Engineer")
       .map((engineer) => generateEngineer(engineer))
       .join("")
   );
@@ -78,8 +78,8 @@ const generateTeam = (team) => {
   // adds intern to array
   html.push(
     team
-      .filter((employees) => employee.getRole() === "Intern")
-      .map((inter) => generateIntern(intern))
+      .filter((employee) => employee.getRole() === "Intern")
+      .map((intern) => generateIntern(intern))
       .join("")
   );
 
