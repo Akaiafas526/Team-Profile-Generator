@@ -19,9 +19,8 @@ const generateTeam = (team) => {
         `;
   };
 
-  // create the html for engineers
+  // created the html for engineers
   const generateEngineer = (engineer) => {
-    // TODO: YOUR CODE HERE
     return `
         <div class="card employee-card">
         <div class="card-header">
@@ -39,9 +38,8 @@ const generateTeam = (team) => {
     `;
   };
 
-  // create the html for interns
+  // created the html for interns
   const generateIntern = (intern) => {
-    // TODO: YOUR CODE HERE
     return `
         <div class="card employee-card">
         <div class="card-header">
