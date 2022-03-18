@@ -10,7 +10,7 @@ const distPath = path.join(DIST_DIR, 'team.html');
 
 const render = require('./src/page-template.js');
 
-const teamMembers = [];
+const teamMembers = ['Manager', 'Engineer', 'Intern'];
 // Create an id array to store the ids.
 // This array will be used to check the potential duplicate id newly entered by user
 const idArray = [];
