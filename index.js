@@ -11,7 +11,7 @@ const distPath = path.join(DIST_DIR, "team.html");
 const render = require("./src/page-template.js");
 
 const teamMembers = [];
-// Create an id array to store the ids.
+
 // This array will be used to check the potential duplicate id newly entered by user
 const idArray = [];
 
@@ -19,14 +19,6 @@ const idArray = [];
 console.log(
   "\nWelcome to the team generator!\nUse `npm run reset` to reset the dist/ folder\n"
 );
-
-// function validateEmail(email) {
-//   return String(email)
-//     .toLowerCase()
-//     .match(
-//       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-//     );
-// };
 
 const isAnswerProvided = (answer) => {
   if (answer !== "") {
@@ -36,12 +28,7 @@ const isAnswerProvided = (answer) => {
 };
 
 function appMenu() {
-  // Create manager first, then the manager will create a team
-  // Once manager is craeted, we will create team by asking the user which type of employee to create
-  // Based on the choice, we will create that employee object
-  // Loop throu the create team function until user is done from creating employees for the team
-  // then we will use the employee objects created to render html for the team
-
+ 
   function createManager() {
     console.log("Please build your team 👥");
     inquirer
@@ -200,7 +187,7 @@ function appMenu() {
   }
 
   function buildTeam() {
-    // Create the output directory if the dist path doesn't exist
+    // Creates the output directory if the dist path doesn't exist
     if (!fs.existsSync(DIST_DIR)) {
       fs.mkdirSync(DIST_DIR);
     }
