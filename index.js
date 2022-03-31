@@ -42,7 +42,7 @@ function appMenu() {
 
         {
           type: "input",
-          name: "managerID",
+          name: "managerId",
           message: `What is the team manager's id.`,
           validate: isAnswerProvided,
         },
@@ -113,7 +113,7 @@ function appMenu() {
 
         {
           type: "input",
-          name: "engineerID",
+          name: "engineerId",
           message: `What is the team engineer's id.`,
           validate: isAnswerProvided,
         },
@@ -132,6 +132,8 @@ function appMenu() {
       ])
       .then((answers) => {
         const engineer = new Engineer(
+          // console.log(engineer),
+
           answers.engineerName,
           answers.engineerId,
           answers.engineerEmail,
@@ -155,7 +157,7 @@ function appMenu() {
 
         {
           type: "input",
-          name: "internID",
+          name: "internId",
           message: `What is the team intern's id.`,
           validate: isAnswerProvided,
         },
