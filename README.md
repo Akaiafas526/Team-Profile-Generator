@@ -5,7 +5,7 @@
 
  ## Video Walkthrough
 
-[Video Walkthrough]()
+[Video Walkthrough](https://youtu.be/7mD7yXSt52E)
 
 
 https://github.com/Akaiafas526/Team-Profile-Generator
